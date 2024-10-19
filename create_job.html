@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Job Opening</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="form-title">Enter Job Data</h1>
+        <form id="jobForm">
+            <label for="title">Job Title*</label>
+            <input type="text" id="title" required>
+
+            <label for="type">Job Type*</label>
+            <select id="type" required>
+                <option value="">Select Job Type</option>
+                <option value="full-time">Full-Time</option>
+                <option value="part-time">Part-Time</option>
+                <option value="contract">Contract</option>
+            </select>
+
+            <label for="department">Department*</label>
+            <select id="department" required>
+                <option value="">Select Department</option>
+                <option value="sales">Sales</option>
+                <option value="marketing">Marketing</option>
+                <option value="engineering">Engineering</option>
+            </select>
+
+            <label for="country">Country*</label>
+            <select id="country" required>
+                <option value="">Select Country</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+                <option value="uk">India</option>
+            </select>
+
+            <label for="description">Job Description*</label>
+            <textarea id="description" required></textarea>
+
+            <label for="opening-date">Opening Date*</label>
+            <input type="date" id="opening-date" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
